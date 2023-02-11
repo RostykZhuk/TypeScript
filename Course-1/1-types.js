@@ -9,3 +9,20 @@ var numberArray2 = [1, 2, 3, 4, 5, 8, 13];
 var words = ['Hello', 'Typescript'];
 // Tuple
 var contact = ['Rostyk', 12345678];
+// Any
+var variable = 42;
+// ...
+variable = 'New User';
+variable = [];
+// ============
+function sayMyName(name) {
+    console.log(name);
+}
+sayMyName('Zuckerberg');
+// Never
+function throwError(message) {
+    throw new Error(message);
+}
+function infinite() {
+    while (true) { }
+}

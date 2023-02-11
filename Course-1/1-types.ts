@@ -20,3 +20,18 @@ let variable: any = 42;
 // ...
 variable = 'New User';
 variable = [];
+
+// ============
+
+function sayMyName(name: string): void {
+  console.log(name);
+}
+sayMyName('Zuckerberg');
+
+// Never
+function throwError(message: string): never {
+  throw new Error(message);
+}
+function infinite(): never {
+  while (true) {}
+}
