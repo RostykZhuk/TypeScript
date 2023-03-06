@@ -18,6 +18,8 @@ const App: FC = () => {
   const addTask = (): void => {
     const newTask = { taskName: task, deadline: deadline };
     setTodoList([...todoList, newTask]);
+    setTask('');
+    setDeadline(0);
   };
 
   return (
@@ -28,11 +30,13 @@ const App: FC = () => {
             type='text'
             placeholder='Task...'
             name='task'
+            value={task}
             onChange={handleChange}
           />
           <input
             type='number'
             placeholder='Deadline (in Days)...'
+            value={deadline}
             onChange={handleChange}
             name='deadline'
           />
